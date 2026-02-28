@@ -1,228 +1,117 @@
 <!DOCTYPE html>
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Kencha House - Boutique Play Studio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#1a1a1a",
-                        "warm-cream": "#F5F2E8",
-                        "accent-line": "#E5E1D5",
-                    },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"],
-                        "script": ["Pinyon Script", "cursive"],
-                        "serif": ["Playfair Display", "serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
-<style type="text/tailwindcss">
-        @layer base {
-            body {
-                @apply bg-[#F5F2E8] text-[#1a1a1a] font-display;
-                min-height: max(884px, 100dvh);
-            }
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .thin-border {
-            border: 0.5px solid #E5E1D5;
-        }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-warm-cream">
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-<header class="sticky top-0 z-50 flex items-center bg-[#F5F2E8]/90 backdrop-blur-md p-4 justify-between border-b border-accent-line">
-<div class="flex size-10 shrink-0 items-center justify-center">
-<span class="material-symbols-outlined text-primary font-light">menu</span>
-</div>
-<div class="flex flex-col items-center">
-<h2 class="text-primary text-xl font-script leading-none">Kencha</h2>
-<p class="text-[8px] tracking-[0.2em] uppercase font-medium">House</p>
-</div>
-<div class="flex w-10 items-center justify-end">
-<button class="flex items-center justify-center">
-<span class="material-symbols-outlined font-light">shopping_bag</span>
-</button>
-</div>
-</header>
-<main class="flex-1">
-<div class="@container">
-<div class="p-0">
-<div class="relative flex min-h-[580px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-8 text-center" data-alt="Minimalist high-end baby play studio interior" style='background-image: linear-gradient(rgba(245, 242, 232, 0.2), rgba(0, 0, 0, 0.4)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnXQgipmHXh5pwufsn0CMBH7gyIf-GqPIUzERoWdaehmuLWC_f1mNeCdrbRK5qTIqaRO8-A3-tWYdFJdvfZYNNBOkWe9OQ2iPhR7jHMCub4WGWnKZ0KJEdiyDHoBFRXVUkjaKuQKq_JfPfBlX4UxumFSylV_LkW8QjbVGaEowBz7a9lT_OPkaJFBBn9hJne_5PqNLCWRyj3txTOIzGLOwcax_IBMChivdrqqBbW-k-6bQWeySjMZcL8Rg3rGJqArfdXl2gImgRn7I");'>
-<div class="flex flex-col gap-4 max-w-md">
-<span class="text-white font-medium tracking-[0.3em] text-[10px] uppercase self-center">Toronto, Ontario</span>
-<h1 class="text-white text-5xl font-serif italic leading-tight tracking-tight">
-                            A Curated Haven for Little Explorers
-                        </h1>
-<p class="text-white/90 text-sm font-light leading-relaxed tracking-wide">
-                            Kencha House is a boutique play studio designed with a minimalist aesthetic to foster calm and creative development.
-                        </p>
-</div>
-<div class="flex flex-col w-full gap-4 mt-8 px-4">
-<button class="flex items-center justify-center h-14 bg-primary text-warm-cream text-xs font-bold uppercase tracking-[0.2em]">
-                            Book a Session
-                        </button>
-<button class="flex items-center justify-center h-14 border border-white text-white text-xs font-bold uppercase tracking-[0.2em] backdrop-blur-sm">
-                            Join Membership
-                        </button>
-</div>
-</div>
-</div>
-</div>
-<section class="px-8 py-16">
-<div class="text-center mb-12">
-<p class="text-primary/60 font-medium text-[10px] uppercase tracking-[0.3em] mb-2">Our Offerings</p>
-<h2 class="text-primary text-3xl font-serif italic">What We Offer</h2>
-</div>
-<div class="grid grid-cols-1 gap-12">
-<div class="flex flex-col gap-4 text-center items-center">
-<span class="material-symbols-outlined text-primary/40 font-extralight text-4xl">child_care</span>
-<div>
-<h3 class="text-primary text-lg font-medium tracking-wide uppercase text-[13px]">Play Sessions</h3>
-<div class="w-8 h-[1px] bg-accent-line mx-auto my-3"></div>
-<p class="text-primary/60 text-xs leading-relaxed max-w-[240px]">Reserved open play in our thoughtfully designed, minimalist environment.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 text-center items-center">
-<span class="material-symbols-outlined text-primary/40 font-extralight text-4xl">auto_stories</span>
-<div>
-<h3 class="text-primary text-lg font-medium tracking-wide uppercase text-[13px]">Developmental Classes</h3>
-<div class="w-8 h-[1px] bg-accent-line mx-auto my-3"></div>
-<p class="text-primary/60 text-xs leading-relaxed max-w-[240px]">Expert-led workshops focusing on sensory and motor skill development.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 text-center items-center">
-<span class="material-symbols-outlined text-primary/40 font-extralight text-4xl">celebration</span>
-<div>
-<h3 class="text-primary text-lg font-medium tracking-wide uppercase text-[13px]">Private Events</h3>
-<div class="w-8 h-[1px] bg-accent-line mx-auto my-3"></div>
-<p class="text-primary/60 text-xs leading-relaxed max-w-[240px]">Exclusive access for bespoke birthday celebrations and milestones.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 text-center items-center">
-<span class="material-symbols-outlined text-primary/40 font-extralight text-4xl">local_mall</span>
-<div>
-<h3 class="text-primary text-lg font-medium tracking-wide uppercase text-[13px]">The Boutique</h3>
-<div class="w-8 h-[1px] bg-accent-line mx-auto my-3"></div>
-<p class="text-primary/60 text-xs leading-relaxed max-w-[240px]">A curated collection of sustainable toys and high-end baby essentials.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="bg-accent-line/30 px-8 py-20 border-y border-accent-line">
-<h2 class="text-primary text-3xl font-serif italic mb-12 text-center">The Kencha Experience</h2>
-<div class="space-y-12 max-w-md mx-auto">
-<div class="flex flex-col items-center text-center gap-4">
-<div class="h-px w-12 bg-primary/20"></div>
-<div>
-<h4 class="text-primary font-medium uppercase tracking-widest text-xs mb-2">Calm &amp; Minimalist</h4>
-<p class="text-primary/60 text-xs leading-loose">Intentionally designed to reduce sensory overload, creating a peaceful atmosphere for both parent and child.</p>
-</div>
-</div>
-<div class="flex flex-col items-center text-center gap-4">
-<div class="h-px w-12 bg-primary/20"></div>
-<div>
-<h4 class="text-primary font-medium uppercase tracking-widest text-xs mb-2">Premium Care</h4>
-<p class="text-primary/60 text-xs leading-loose">From organic refreshments to designer nursing suites, every detail is considered for your comfort.</p>
-</div>
-</div>
-<div class="flex flex-col items-center text-center gap-4">
-<div class="h-px w-12 bg-primary/20"></div>
-<div>
-<h4 class="text-primary font-medium uppercase tracking-widest text-xs mb-2">Aesthetic Play</h4>
-<p class="text-primary/60 text-xs leading-loose">A beautiful, Instagram-worthy backdrop that celebrates the simple beauty of childhood exploration.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="px-8 py-20">
-<h2 class="text-primary text-2xl font-serif italic mb-10 text-center">Voices from our Community</h2>
-<div class="flex overflow-x-auto gap-6 no-scrollbar pb-4 snap-x">
-<div class="min-w-[85%] snap-center border border-accent-line p-8 bg-white/40">
-<div class="flex gap-1 mb-6 justify-center">
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-</div>
-<p class="text-primary text-sm font-light italic leading-relaxed mb-8 text-center">"The most peaceful play space in Toronto. I actually got to finish my coffee while Leo explored safely in such a beautiful setting."</p>
-<div class="flex flex-col items-center gap-2">
-<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Sarah M.</p>
-<p class="text-[9px] text-primary/40 uppercase tracking-widest">Mother of 18-month old</p>
-</div>
-</div>
-<div class="min-w-[85%] snap-center border border-accent-line p-8 bg-white/40">
-<div class="flex gap-1 mb-6 justify-center">
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-<span class="material-symbols-outlined text-[10px] text-primary">star</span>
-</div>
-<p class="text-primary text-sm font-light italic leading-relaxed mb-8 text-center">"Kencha House is a breath of fresh air. The classes are incredibly high-quality and the environment is simply stunning."</p>
-<div class="flex flex-col items-center gap-2">
-<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">David K.</p>
-<p class="text-[9px] text-primary/40 uppercase tracking-widest">Father of 2-year old</p>
-</div>
-</div>
-</div>
-</section>
-<section class="px-8 py-16 border-t border-accent-line bg-white/20">
-<div class="flex items-center justify-between mb-8">
-<h2 class="text-primary text-sm font-medium tracking-widest uppercase">@kenchahouse</h2>
-<span class="text-primary/60 text-[10px] font-bold uppercase tracking-widest border-b border-primary/20 pb-1">Follow Us</span>
-</div>
-<div class="grid grid-cols-3 gap-1">
-<div class="aspect-square bg-slate-100 overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7puvEPK2yJrynt2Kq7IIzzDYnM2QyLIZ6h09n8OO4xk7C9Z-gnoa7Usxh6clSemcr9PPmkysqPAuRepS6GRMssDIg53ui_8eufTV14HAdggvtuID-g90dVFjU36HWahSK5zIAwQDNoYR7Cbz1jRPJWELNzMuUgnCkQWQAxctMzb7Zuh-VRdU9txKiuX5XEQjLXSKOeU9jMe_ighvWzUuOgJVAgOMLGZvyYjm7qb2kZRo511GCzhStvczFVO-yt0e4g_EgRFd1Hi4"); background-size: cover;'></div>
-<div class="aspect-square bg-slate-100 overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwddctJF81eHwVofk7Hr3ild1l39OiqRF7wIPtkq-Mh1dXxku_TTLAAQ14iTFSjmfNeEs-RA_oUoL6SjRDykjO5jwjsSfmXCbKrtaAkwXsBXXGCE0z5fYmhzR9Lf47uabaodMy6Vgy1HGZJTVA-Hf24VCUZ4uE7unlrwIu61bdxAdJzNglb4HyBv9WXHyhCrbLbW-50GcxuIVAsTz9o8DRQKL4D9yWbwlvW62VoL-tO2T-XqCjvnH0mmOp_hsmgkSfYQpL6bfV_zY"); background-size: cover;'></div>
-<div class="aspect-square bg-slate-100 overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyxyQa8o5frXwjCEvNvnkOHt3WH_Oei-0GRZtK5q-aMk-VVvJqmPTjNkhqCeTr7L2ImB5WcMZp_MEHSVeHH1B_8f3bd_5WonEG8DFGjiQ2fBh3IOoYsQkkQvGDVppRp9eFjo_EXPnAlMDNlj5mHqwTtLlILbaJQhjAj27fooTtmBUJlLBkmhjOPw3jqB24cQXWg2XpKvSQ8G56avJ2ZMqjpUrGlDTP9eVQZLJ7l_waUCUnTf3ibRk63IRhV7kB5lJaOZvalPBSvLM"); background-size: cover;'></div>
-<div class="aspect-square bg-slate-100 overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3hlv0iQeNU2Pch5z-d5jFc9MCs1wDpe2P-bTUHVHlNgJ85DeLYTLW3PaTvzenR2SXY5WwIz-Puxzdv54aWl0NCwutDLyLOAPQN0n7OSDuj-6DP4U7_LDjHc2bkFbl5D87f7lDay579Jrx4YDev6GxFLomP_S2oPEdMae-sZVdSVTkR5GcYDiyxR-7L50yMA61dpih-C58YMUz9tRl_up5AcoNZBdIdPNJNUrXhekq1zwNC7JHGMWTmlDcCEGH2GEKyCX1zCDWWgw"); background-size: cover;'></div>
-<div class="aspect-square bg-slate-100 overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCd-GluuyxsU9VqYAgDL_oRyxNYBds-zo6DkJyW7D0_cJha2H41y-JaSAyTvxq2twSzbn3JjlWXPUrrryZ_P_MQ6OIc3u6YuA2dmbwaD2sX7RsgKINlKXhi7ePQCS6YS0eSMjlx3gwW0JkL_KMZRbnOffSFv8V4TSuxc2gmlUfVJTDS_QTuku5Zy8ARPSN2Dh4kbCOsRyyLimYGik8MlRAYTxyRFswlbdfdE9qJklsOkYxiaPvoQJaPvpefHv45Yceh9QH9hQeQXk"); background-size: cover;'></div>
-<div class="aspect-square bg-slate-100 overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGF23M5dI24Nicu5BmWNw5jYeQetRF5rDESXelbiJ1PnwU49jeUCEsXXaVQBRNnuyoPrRBUkuoQBkNkqFngAtuTzLq4BuzMK3c7VxW6Whezy26Ra9zL2Ky937XXPIG2FVblm8MMNWq4eRc0dnMxb9BR3Ib6aInf8GPSd-1YDYt2vWBdURKd5SxkYWrh-oxHS1rHXcnlxhIYZEiUaAKV9cRwJC47ViK7CfR_ZXppzPSAV69cNJFzeVHpdYi5gQ97bIHOH8El32AAZs"); background-size: cover;'></div>
-</div>
-</section>
-</main>
-<nav class="sticky bottom-0 z-50 flex border-t border-accent-line bg-warm-cream/95 backdrop-blur-md px-6 pb-8 pt-4">
-<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
-<span class="material-symbols-outlined text-xl font-light">home</span>
-<p class="text-[9px] font-bold uppercase tracking-[0.2em]">Home</p>
-</a>
-<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary/40" href="#">
-<span class="material-symbols-outlined text-xl font-light">calendar_today</span>
-<p class="text-[9px] font-bold uppercase tracking-[0.2em]">Book</p>
-</a>
-<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary/40" href="#">
-<span class="material-symbols-outlined text-xl font-light">loyalty</span>
-<p class="text-[9px] font-bold uppercase tracking-[0.2em]">Member</p>
-</a>
-<a class="flex flex-1 flex-col items-center justify-center gap-1 text-primary/40" href="#">
-<span class="material-symbols-outlined text-xl font-light">person_outline</span>
-<p class="text-[9px] font-bold uppercase tracking-[0.2em]">Profile</p>
-</a>
-</nav>
-</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kencha House | Baby Play Cafe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-</body></html>
+<header>
+  <div class="container nav">
+    <div class="logo">Kencha House</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#play">Play</a>
+      <a href="#parties">Parties</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="btn-primary">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Play • Learn • Connect</h1>
+    <p>A cozy baby play cafe for drop-in fun, birthdays, and private play dates.</p>
+    <a href="#" class="btn-primary">Book Your Visit</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container two-col">
+    <div>
+      <h2>Welcome to Kencha House</h2>
+      <p>A safe and beautifully designed play cafe for babies and toddlers (0–4 years). Relax with a coffee while your little one explores sensory play areas designed for development and joy.</p>
+    </div>
+    <div class="image-placeholder"></div>
+  </div>
+</section>
+
+<section id="play" class="section alt-bg">
+  <div class="container center">
+    <h2>Drop-In Play</h2>
+    <p>Flexible sessions for parents and little explorers.</p>
+    <div class="card-grid">
+      <div class="card">Sensory Stations</div>
+      <div class="card">Soft Play Areas</div>
+      <div class="card">Parent Lounge</div>
+      <div class="card">Healthy Cafe Options</div>
+    </div>
+    <a href="#" class="btn-primary">Book Drop-In</a>
+  </div>
+</section>
+
+<section id="parties" class="section">
+  <div class="container center">
+    <h2>Birthday Parties</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Mini Party</h3>
+        <p>1 hour celebration with decor</p>
+      </div>
+      <div class="card">
+        <h3>Standard Party</h3>
+        <p>90 minutes + themed setup</p>
+      </div>
+      <div class="card">
+        <h3>Premium Party</h3>
+        <p>Themed + Cake + Photographer</p>
+      </div>
+    </div>
+    <a href="#" class="btn-primary">Plan Your Party</a>
+  </div>
+</section>
+
+<section id="studio" class="section alt-bg">
+  <div class="container center">
+    <h2>Studio & Private Play</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Photo Studio Rental</h3>
+        <p>Professional lighting and cozy backdrops.</p>
+      </div>
+      <div class="card">
+        <h3>Private Play Dates</h3>
+        <p>Reserve the space for small groups.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container center">
+    <h2>Cafe Menu Highlights</h2>
+    <div class="card-grid">
+      <div class="card">Lattes & Teas</div>
+      <div class="card">Smoothies</div>
+      <div class="card">Kids Snack Boxes</div>
+      <div class="card">Allergy-Friendly Options</div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container footer-content">
+    <h3>Kencha House</h3>
+    <p>123 Cozy Street, Your City</p>
+    <p>Email: hello@kenchahouse.com</p>
+    <p>© 2026 Kencha House</p>
+  </div>
+</footer>
+
+</body>
+</html>
