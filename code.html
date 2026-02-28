@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story and Values</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2bcdee",
+              "background-light": "#f6f8f8",
+              "background-dark": "#101f22",
+              "warm-beige": "#fdfaf6",
+              "soft-taupe": "#e9e3dc",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-warm-beige dark:bg-background-dark overflow-x-hidden max-w-[430px] mx-auto shadow-2xl">
+<!-- Header / Top Bar -->
+<div class="flex items-center bg-warm-beige/80 backdrop-blur-md sticky top-0 z-50 p-4 pb-2 justify-between">
+<div class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined cursor-pointer">arrow_back_ios</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">About Us</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-slate-900 dark:text-slate-100 gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Hero / Story Section -->
+<div class="px-4 py-2">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-soft-taupe rounded-xl min-h-[340px]" data-alt="A parent and young child playing together in a bright minimal studio" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhM7rc6fBDN1NxURjOs-QaCwwMOQgeJ5PR13EcPL3xRmglCsI9gjU0DRILae8uVqqAG5AtamQcb6izigJxHzaWCyYIrkhfyCbhI6IpmZiRMM1KO7vsWl_UWYjsoSWjXWJ5Ic5rg66S0V1hGpW5cXn_5SSd0S2E1eQeKLOjMiRXLmFGzlPztRzOFRQAv5QwpHE8xb63x3MNZZOIY9VwAXZ6C37spi4zOmRLhZRlckKTAT1sOspq9COcL2TJwCAlA3OM3fcrFKR7k08");'>
+</div>
+</div>
+<div class="px-6 py-8">
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-3xl font-bold leading-tight mb-4">Our Story</h1>
+<p class="text-slate-700 dark:text-slate-300 text-base font-normal leading-relaxed">
+                Founded in the heart of Toronto, our studio was born from a vision of creating an intentional, cozy space where little ones can explore and parents can find a moment of calm. Inspired by high-end baby spas, we prioritize premium materials and a tranquil atmosphere.
+            </p>
+<p class="text-slate-700 dark:text-slate-300 text-base font-normal leading-relaxed mt-4">
+                We believe that early childhood play should be beautiful, safe, and deeply connected. Every corner of our studio is curated to spark curiosity while maintaining a sense of serenity for the whole family.
+            </p>
+</div>
+<!-- Values Section -->
+<div class="bg-white dark:bg-slate-900/50 py-10 px-6 rounded-t-[2.5rem]">
+<div class="text-center mb-8">
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold">Our Values</h2>
+<div class="w-12 h-1 bg-primary mx-auto mt-2 rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<!-- Value 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="size-20 bg-primary/10 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-sm">Safe Play</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1 leading-snug">Non-toxic, high-end materials only.</p>
+</div>
+<!-- Value 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="size-20 bg-primary/10 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-sm">Design-forward</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1 leading-snug">Minimalist aesthetic for calm minds.</p>
+</div>
+<!-- Value 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="size-20 bg-primary/10 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">favorite</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-sm">Connection</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1 leading-snug">Deepening bonds between parent &amp; child.</p>
+</div>
+<!-- Value 4 -->
+<div class="flex flex-col items-center text-center">
+<div class="size-20 bg-primary/10 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-sm">Community</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1 leading-snug">A supportive space for Toronto families.</p>
+</div>
+</div>
+</div>
+<!-- Contact/CTA Section -->
+<div class="px-6 py-10 text-center bg-white dark:bg-slate-900/50">
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-2">Visit our Toronto Studio</h4>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-6">Experience the calm and joy of intentional play.</p>
+<button class="w-full bg-primary text-slate-900 font-bold py-4 rounded-xl shadow-lg shadow-primary/20">
+                Book a Session
+            </button>
+</div>
+<div class="h-24 bg-white dark:bg-slate-900/50"></div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto border-t border-slate-100 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg px-4 pb-6 pt-2 z-50">
+<div class="flex gap-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">home</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Studio</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">favorite</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">About</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Contact</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>
